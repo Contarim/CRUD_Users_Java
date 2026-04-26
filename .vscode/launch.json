@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CrudSpringApplication",
+            "request": "launch",
+            "mainClass": "com.contarim.CrudSpringApplication",
+            "projectName": "crud-spring"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-CrudSpringApplication<crud-spring>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.contarim.crud_spring.CrudSpringApplication",
+            "projectName": "crud-spring",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=51118 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=crud-spring"
+        }
+    ]
+}

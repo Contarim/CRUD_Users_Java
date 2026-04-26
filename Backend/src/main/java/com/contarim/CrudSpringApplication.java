@@ -9,7 +9,6 @@ import com.contarim.model.Course;
 import com.contarim.repository.CourseRepository;
 
 @SpringBootApplication //indica que a classe é a classe principal do Spring Boot, ou seja, ela irá conter o método main que irá iniciar a aplicação e também irá habilitar as configurações automáticas do Spring Boot
-
 public class CrudSpringApplication {
 
 	public static void main(String[] args) {
