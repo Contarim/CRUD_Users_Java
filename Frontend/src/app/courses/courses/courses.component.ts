@@ -14,14 +14,14 @@ import { ErrorDialogComponent } from 'src/app/shared/componets/error-dialog/erro
 })
 export class CoursesComponent implements OnInit {
 
-  courses$: Observable<Course[]>;
+  courses$: Observable<Course[]>; // Observable é uma função para que só será executada quando for chamada, ou seja, quando o componente for renderizado. O subscribe é chamado automaticamente pelo Angular quando o componente é renderizado.
   displayedColumns = ['_id', 'name', 'category'];
 
   // CoursesService: CoursesService;
 
   constructor(
-    private coursesService: CoursesService,
-    public dialog: MatDialog
+    private coursesService: CoursesService, // injeção de dependência, ou seja, o Angular vai criar uma instância da classe CoursesService e injetar no construtor da classe CoursesComponent.
+    public dialog: MatDialog // injeção de dependência, ou seja, o Angular vai criar uma instância da classe MatDialog e injetar no construtor da classe CoursesComponent.
   ) {
 
     // this.CoursesService = new CoursesService();

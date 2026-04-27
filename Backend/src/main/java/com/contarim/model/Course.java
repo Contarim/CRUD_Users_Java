@@ -6,6 +6,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 // import lombok.Data;
 // @Data //método do lombok para gerar os getters e setters automaticamente
 
@@ -16,6 +18,7 @@ public class Course {
     
     @Id //indica que o atributo é a chave primária da tabela
     @GeneratedValue(strategy = GenerationType.AUTO) //indica que o valor do id será gerado automaticamente pelo banco de dados
+    @JsonProperty("_id") //indica que o nome do atributo no JSON será _id, ou seja, quando a aplicação receber um JSON com um atributo _id, ele irá mapear esse valor para o atributo id da classe Course
     private Long id;
 
     // @Column(name = "nome") -- > para vincular o nome do atributo com o nome da coluna no banco de dados caso sejam diferentes
